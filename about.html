@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Hon. Keynan Abdi Mohamed</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      color: #222;
+    }
+    .main-header {
+      background: #003366;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 0;
+      margin: 0;
+    }
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 32px;
+    }
+    .header-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #ffd700;
+      white-space: nowrap;
+      margin-right: 40px;
+    }
+    nav ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.2s;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+    nav a.active, nav a:hover {
+      background: #0055a5;
+    }
+    @media (max-width: 700px) {
+      .header-flex {
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px 6px;
+      }
+      .header-name {
+        margin-right: 0;
+        margin-bottom: 6px;
+      }
+      nav ul {
+        gap: 10px;
+      }
+    }
+    main {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 32px 0;
+      padding: 32px 24px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-img {
+      flex: 0 0 220px;
+      max-width: 220px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border: 2px solid #eee;
+      background: #fff;
+    }
+    .about-content {
+      flex: 1 1 320px;
+      min-width: 260px;
+    }
+    .about-content h2 {
+      color: #003366;
+      margin-top: 0;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .about-content p {
+      font-size: 1.08rem;
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    .about-list {
+      margin: 0 0 16px 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+    .about-list li {
+      background: #f1f6fa;
+      color: #003366;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .about-list i {
+      color: #0055a5;
+      font-size: 1.1rem;
+    }
+    /* Footer styles */
+    .footer-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .footer-flex p {
+      margin: 0;
+      font-size: 1rem;
+      color: #fff;
+    }
+    .footer-social {
+      display: flex;
+      gap: 12px;
+    }
+    .footer-social a {
+      color: #fff;
+      font-size: 1.5rem;
+      background: #003366;
+      padding: 10px 14px;
+      border-radius: 50%;
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+      border: 1px solid #fff;
+    }
+    .footer-social a:hover {
+      color: #ffd700;
+      background: #0055a5;
+      border-color: #ffd700;
+    }
+    @media (max-width: 900px) {
+      .about-section {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .about-img {
+        margin-bottom: 18px;
+      }
+    }
+    @media (max-width: 700px) {
+      .footer-flex {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
+        text-align: center;
+      }
+      .footer-social {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-flex">
+      <span class="header-name">Hon. Keynan Abdi Mohamed</span>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="vision.html">Vision</a></li>
+          <li><a href="campaign.html">Campaign</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="media.html">Media</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-section">
+      <img src="images/keynan1.png" alt="Hon. Keynan Abdi Mohamed" class="about-img" />
+      <div class="about-content">
+        <h2>About Hon. Keynan Abdi Mohamed</h2>
+        <p>
+          Hon. Keynan Abdi Mohamed is a passionate Ugandan leader, community organizer, and public servant dedicated to the progress and unity of Uganda. With a background rooted in advocacy for youth empowerment and education, he has risen to serve his community in various leadership roles.
+        </p>
+        <ul class="about-list">
+          <li><i class="fas fa-graduation-cap"></i> Advocate for Quality Education</li>
+          <li><i class="fas fa-users"></i> Champion for Youth Empowerment</li>
+          <li><i class="fas fa-handshake"></i> Promoter of Unity & Inclusion</li>
+          <li><i class="fas fa-balance-scale"></i> Defender of Good Governance</li>
+        </ul>
+        <p>
+          Born and raised in Uganda, Keynan understands the needs and aspirations of ordinary Ugandans. He stands for transparency, equal opportunity, and inclusive development for all regions of the country.
+        </p>
+        <p>
+          As a candidate for the 2026 elections, Hon. Keynan Abdi Mohamed leads a diverse and energetic team focused on unity, service delivery, and restoring trust in government institutions. His vision is to build a prosperous, peaceful, and inclusive Uganda for all.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-flex">
+      <p>&copy; 2025 Team Keynan | Designed for IT & Web Design Project</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/19QgeAo2F4/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/KeynaanAbdi2" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/maxamuudbayle" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision | Hon. Keynan Abdi Mohamed</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      color: #222;
+    }
+    .main-header {
+      background: #003366;
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 0;
+      margin: 0;
+    }
+    .header-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 32px;
+    }
+    .header-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #ffd700;
+      white-space: nowrap;
+      margin-right: 40px;
+    }
+    nav ul {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.2s;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+    nav a.active, nav a:hover {
+      background: #0055a5;
+    }
+    @media (max-width: 700px) {
+      .header-flex {
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px 6px;
+      }
+      .header-name {
+        margin-right: 0;
+        margin-bottom: 6px;
+      }
+      nav ul {
+        gap: 10px;
+      }
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    main {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 32px 0;
+      padding: 32px 24px;
+    }
+    .vision-title {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 12px;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .vision-intro {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+    }
+    .focus-areas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .focus-card {
+      background: #f1f6fa;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 24px 18px;
+      flex: 1 1 220px;
+      min-width: 220px;
+      max-width: 270px;
+      text-align: center;
+      border-top: 4px solid #003366;
+    }
+    .focus-card i {
+      font-size: 2.2rem;
+      color: #0055a5;
+      margin-bottom: 10px;
+    }
+    .focus-card h4 {
+      margin: 10px 0 8px 0;
+      color: #003366;
+      font-size: 1.2rem;
+    }
+    .focus-card p {
+      font-size: 1rem;
+      color: #222;
+    }
+    @media (max-width: 900px) {
+      .focus-areas {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    /* Footer styles */
+    .footer-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .footer-flex p {
+      margin: 0;
+      font-size: 1rem;
+      color: #fff;
+    }
+    .footer-social {
+      display: flex;
+      gap: 12px;
+    }
+    .footer-social a {
+      color: #fff;
+      font-size: 1.5rem;
+      background: #003366;
+      padding: 10px 14px;
+      border-radius: 50%;
+      transition: background 0.2s, color 0.2s;
+      display: inline-block;
+      border: 1px solid #fff;
+    }
+    .footer-social a:hover {
+      color: #ffd700;
+      background: #0055a5;
+      border-color: #ffd700;
+    }
+    @media (max-width: 700px) {
+      .footer-flex {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
+        text-align: center;
+      }
+      .footer-social {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-flex">
+      <span class="header-name">Hon. Keynan Abdi Mohamed</span>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vision.html" class="active">Vision</a></li>
+          <li><a href="campaign.html">Campaign</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="media.html">Media</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="vision">
+      <h2 class="vision-title">Our Vision for Uganda</h2>
+      <p class="vision-intro">
+        Together, we can build a Uganda where every citizen has the opportunity to thrive. My vision is rooted in unity, progress, and empowerment for all. Join me as we shape a brighter, more inclusive future for our nation.
+      </p>
+      <div class="focus-areas">
+        <div class="focus-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h4>Quality Education</h4>
+          <p>Free and quality education for all children, better teacher support, and investment in skills and vocational training.</p>
+        </div>
+        <div class="focus-card">
+          <i class="fas fa-hospital"></i>
+          <h4>Accessible Healthcare</h4>
+          <p>Modern health facilities, affordable care, and improved access for rural communities to ensure a healthy nation.</p>
+        </div>
+        <div class="focus-card">
+          <i class="fas fa-users"></i>
+          <h4>Youth Empowerment</h4>
+          <p>Job creation, entrepreneurship programs, and leadership opportunities for young Ugandans to drive our future.</p>
+        </div>
+        <div class="focus-card">
+          <i class="fas fa-road"></i>
+          <h4>Infrastructure</h4>
+          <p>Upgrading roads, water systems, and housing to connect communities and support economic growth.</p>
+        </div>
+        <div class="focus-card">
+          <i class="fas fa-balance-scale"></i>
+          <h4>Good Governance</h4>
+          <p>Transparency, anti-corruption reforms, and decentralization to bring services closer to the people.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-flex">
+      <p>&copy; 2025 Team Keynan | Designed for IT & Web Design Project</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/19QgeAo2F4/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/KeynaanAbdi2" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/maxamuudbayle" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

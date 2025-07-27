@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media | Hon. Keynan Abdi Mohamed</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Google Fonts Example -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    header, footer {
+      background: #003366;
+      color: #fff;
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-align: center;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    nav a.active, nav a:hover {
+      background: #0055a5;
+    }
+    main {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 32px 0;
+      padding: 32px 24px;
+    }
+    .image-gallery {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .image-gallery img {
+      width: 220px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      border: 2px solid #eee;
+    }
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .video-gallery iframe {
+      border-radius: 8px;
+      border: 2px solid #eee;
+    }
+    .social-links {
+      margin-top: 16px;
+      text-align: center;
+    }
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      display: inline-block;
+      transition: color 0.2s;
+    }
+    .social-links a:hover {
+      color: #ffd700;
+    }
+    @media (max-width: 600px) {
+      .image-gallery, .video-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        padding: 16px 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Hon. Keynan Abdi Mohamed</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vision.html">Vision</a></li>
+          <li><a href="campaign.html">Campaign</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="media.html" class="active">Media</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="media">
+      <h2>Media Coverage</h2>
+      <p>Explore the latest media coverage, images, and videos featuring Hon. Keynan Abdi Mohamed and his campaign activities.</p>
+
+      <h3>Images</h3>
+      <div class="image-gallery">
+        <img src="images/keynan1.png" alt="Hon. Keynan Abdi Mohamed" />
+        <!-- Add more images as needed -->
+      </div>
+
+      <h3>Videos</h3>
+      <div class="video-gallery">
+        <iframe width="350" height="200" src="https://www.youtube.com/embed/AGU3lGSWYRM" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+        <!-- Add more video links as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Team Keynan | Designed for IT & Web Design Project</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/19QgeAo2F4/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/KeynaanAbdi2" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/maxamuudbayle" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

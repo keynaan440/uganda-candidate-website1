@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Hon. Keynan Abdi Mohamed</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      color: #222;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    header, footer {
+      background: #003366;
+      color: #fff;
+      padding: 20px 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-align: center;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    nav a.active, nav a:hover {
+      background: #0055a5;
+    }
+    main {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 32px 0;
+      padding: 32px 24px;
+    }
+    .contact-title {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 12px;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .contact-intro {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto 32px auto;
+      background: #f1f6fa;
+      padding: 24px 18px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 500;
+      color: #003366;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: #fff;
+      resize: vertical;
+    }
+    .contact-form textarea {
+      min-height: 90px;
+    }
+    .contact-form button {
+      background: #003366;
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      width: 100%;
+    }
+    .contact-form button:hover {
+      background: #0055a5;
+    }
+    .social-links {
+      margin-top: 16px;
+      text-align: center;
+    }
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      display: inline-block;
+      transition: color 0.2s;
+      background: #003366;
+      padding: 10px 14px;
+      border-radius: 50%;
+    }
+    .social-links a:hover {
+      color: #ffd700;
+      background: #0055a5;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 16px 4px;
+      }
+      .contact-form {
+        padding: 16px 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Hon. Keynan Abdi Mohamed</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="vision.html">Vision</a></li>
+          <li><a href="campaign.html">Campaign</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="media.html">Media</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact">
+      <h2 class="contact-title">Contact & Get Involved</h2>
+      <p class="contact-intro">
+        If you have any questions, want to volunteer, or would like to support our campaign, please reach out using the form below or connect with us on social media.
+      </p>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/19QgeAo2F4/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/KeynaanAbdi2" target="_blank" title="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/maxamuudbayle" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Team Keynan | Designed for IT & Web Design Project</p>
+    </div>
+  </footer>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
